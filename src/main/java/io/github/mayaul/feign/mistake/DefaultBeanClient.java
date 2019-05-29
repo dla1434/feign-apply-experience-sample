@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 /**
  * Feign 의 Default Contract 를 사용하면 생기는 일
  */
-@FeignClient(value = "default-bean", url = "${external-api.http-bin}", configuration = {DefaultBeanConfiguration.class})
+@FeignClient(value = "default-bean", url = "https://httpbin.org", configuration = {DefaultBeanConfiguration.class})
 public interface DefaultBeanClient {
 //    @GetMapping("/status/{status}")
 //    void status(@PathVariable("status") int status);

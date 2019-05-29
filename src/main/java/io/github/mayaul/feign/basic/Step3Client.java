@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 /**
  * Basic Auth 인증 호출 하기
  */
-@FeignClient(value = "step3", url = "${external-api.http-bin}", configuration = {BasicAuthConfiguration.class})
+@FeignClient(value = "step3", url = "https://httpbin.org", configuration = {BasicAuthConfiguration.class})
 public interface Step3Client {
 
     @GetMapping("/status/{status}")

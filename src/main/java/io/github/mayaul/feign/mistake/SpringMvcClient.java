@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 /**
  * Feign 에서 @PathVariable 에 value 를 설정을 하지 않았을 경우 생기는 일
  */
-@FeignClient(value = "spring-mvc", url = "${external-api.http-bin}")
+@FeignClient(value = "spring-mvc", url = "https://httpbin.org")
 public interface SpringMvcClient {
 
 //    @GetMapping("/status/{status}")
